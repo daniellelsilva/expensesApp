@@ -1,10 +1,10 @@
 import React from 'react'
 import { View } from 'react-native'
 
-export default function AllExpenses() {
+export default function ManageExpenses() {
   return (
     <View>
-      All Expenses
+      Manage Expenses
     </View>
   )
 }
