@@ -40,8 +40,8 @@ const DUMMY_EXPENSES = [
 export default function ExpensesOutput({expenses, expensesPeriod}) {
   return (
     <View>
-      <ExpensesSummary expenses={expenses} period={expensesPeriod} />
-      <ExpensesList />
+      <ExpensesSummary expenses={DUMMY_EXPENSES} period={expensesPeriod} />
+      <ExpensesList expenses={DUMMY_EXPENSES} />
     </View>
   )
 }
