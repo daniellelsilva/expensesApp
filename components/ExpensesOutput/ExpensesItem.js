@@ -17,7 +17,7 @@ export default function ExpensesItem({description, date, amount}) {
         </View>
         <View style={styles.amountContainer}>
           <Text style={styles.amount}>
-            {amount}
+            {amount.toFixed(2)}
           </Text>
         </View>
       </View>
@@ -53,7 +53,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 4
+    borderRadius: 4,
+    minWidth: 80
   },
   amount: {
     color: GlobalStyles.colors.primary500,
