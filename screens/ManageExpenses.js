@@ -2,6 +2,7 @@ import React, { useLayoutEffect } from 'react'
 import { StyleSheet, View } from 'react-native'
 import IconButton from '../components/UI/IconButton';
 import { GlobalStyles } from '../constants/styles';
+import Button from '../components/UI/Button';
 
 export default function ManageExpenses({ route, navigation }) {
   const editedExpenseId = route.params?.expenseId;
@@ -17,9 +18,21 @@ export default function ManageExpenses({ route, navigation }) {
     
   }
 
+  const cancelHandler = () => {
+    
+  }
+
+  const confirmHandler = () => {
+    
+  }
+
 
   return (
     <View style={styles.container}>
+      <View>
+        <Button mode='flat' onPress={cancelHandler}>Cancel</Button>
+        <Button onPress={confirmHandler}>{isEditing ? 'Update' : 'Add'}</Button>
+      </View>
       {isEditing && (
         <View style={styles.deleteContainer}>
           <IconButton icon="trash" color={GlobalStyles.colors.error50} size={36} onPress={deleteExpenseHandler} />
