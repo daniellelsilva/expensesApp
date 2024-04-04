@@ -4,7 +4,10 @@ import Input from "./Input";
 export default function ExpenseForm() {
   return (
     <View>
-      <Input label="Amount" />
+      <Input
+        label="Amount"
+        textInputConfig={{}}
+      />
       <Input label="Date" />      
       <Input label="Description" />      
     </View>

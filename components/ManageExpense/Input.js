@@ -1,10 +1,10 @@
-import { TextInput, View } from "react-native";
+import { Text, TextInput, View } from "react-native";
 
-export default function Input({ label, keyboardType }) {
+export default function Input({ label, textInputConfig }) {
   return (
     <View>
       <Text>{ label }</Text>
-      <TextInput keyboardType={keyboardType} />
+      <TextInput {...textInputConfig} />
     </View>
   )
 }
